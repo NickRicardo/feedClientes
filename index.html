@@ -1,14 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Responsive client Testimonial Section</title>
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 </head>
+
+
 <body>
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" class="quote">
+                        <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nam ea minus, nihil facilis iusto. Lorem ipsum dolor sit amet.</p>
+                            <div class="datails">
+                                <div class="imgBx">
+                                    <img src="pt2.jfif">
+                                </div>
+                                <h3>Someone Famous</h3><span>Developement Web</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" alt="quote">
+                        <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nam ea minus, nihil facilis iusto. Lorem ipsum dolor sit amet.</p>
+                            <div class="datails">
+                                <div class="imgBx">
+                                    <img src="user1.jpg">
+                                </div>
+                                <h3>Someone Famous</h3><span>Developement Web</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" alt="quote">
+                        <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nam ea minus, nihil facilis iusto. Lorem ipsum dolor sit amet.</p>
+                            <div class="datails">
+                                <div class="imgBx">
+                                    <img src="user1.jpg">
+                                </div>
+                                <h3>Someone Famous</h3><span>Developement Web</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
     
-
-
 </body>
+
 </html>
