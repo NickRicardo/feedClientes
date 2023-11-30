@@ -53,16 +53,18 @@ section {
     top: 20px;
     right: 30px;
     opacity: 0.2;
+    width: 50px;
+    height: 50px;
  
 }
 
-.testimonialBox .datails{
+.testimonialBox .details{
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
-.testimonialBox .datails .imgBx{
+.testimonialBox .details .imgBx{
     position: relative;
     width: 60px;
     height: 60px;
@@ -71,7 +73,7 @@ section {
     margin-right: 10px
 }
 
-.testimonialBox .datails .imgBx img{
+.testimonialBox .details .imgBx img{
     position: absolute;
     top: 0;
     left: 0;
@@ -80,14 +82,17 @@ section {
     object-fit: cover;
 }
 
-.testimonialBox .datails h3{
+.testimonialBox .details h3{
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.1em;
+    color: #2196f3;
 
 }
 
-.testimonialBox .datails h3 span{
+.testimonialBox .details h3 span{
     font-size: 12px;
+    color: #666;
 }
+
