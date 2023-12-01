@@ -32,6 +32,14 @@ section {
     background-position: center;
     background-size: cover;
     width: 350px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+    background: #d1ebff;
+    border-radius: 10px;
+}
+
+.swiper-slide-active{
+    filter: blur(0px);
     background: #fff;
 }
 
@@ -40,7 +48,7 @@ section {
     width: 100%;
 }
 
-.testimonialBox{
+.testimonialBox {
     position: relative;
     width: 100%;
     padding: 40px;
@@ -48,23 +56,23 @@ section {
     color: #999;
 }
 
-.testimonialBox .quote{
+.testimonialBox .quote {
     position: absolute;
     top: 20px;
     right: 30px;
     opacity: 0.2;
     width: 50px;
     height: 50px;
- 
+
 }
 
-.testimonialBox .details{
+.testimonialBox .details {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
-.testimonialBox .details .imgBx{
+.testimonialBox .details .imgBx {
     position: relative;
     width: 60px;
     height: 60px;
@@ -73,7 +81,7 @@ section {
     margin-right: 10px
 }
 
-.testimonialBox .details .imgBx img{
+.testimonialBox .details .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -82,7 +90,7 @@ section {
     object-fit: cover;
 }
 
-.testimonialBox .details h3{
+.testimonialBox .details h3 {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -91,8 +99,12 @@ section {
 
 }
 
-.testimonialBox .details h3 span{
+.testimonialBox .details h3 span {
     font-size: 12px;
     color: #666;
 }
 
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right  {
+    background: none;
+}
